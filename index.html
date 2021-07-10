@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고양이로 알아보는 HTTP 상태 코드</title>
+</head>
+<body>
+  <h1>고양이로 알아보는 HTTP 상태 코드</h1>
+  <button id="200">200</button>
+  <button id="400">400</button>
+  <button id="401">401</button>
+  <button id="403">403</button>
+  <button id="404">404</button>
+  <button id="408">408</button>
+  <button id="409">409</button>
+  <button id="418">418</button>
+  <button id="500">500</button>
+  <button id="501">501</button>
+  <button id="502">502</button>
+  <button id="503">503</button>
+  <br />
+  <img src="https://http.cat/200">
+  <div id="description"></div>
+  <script>
+    const buttons = document.querySelectorAll('button')
+    const img = document.querySelector('img')
+    const div = document.getElementById('description')
+
+    buttons.forEach((button)=>{
+      button.addEventListener('click', ()=>{
+        img.src = `https://http.cat/${button.id}`
+      })
+    })
+  </script>
+</body>
+</html>
