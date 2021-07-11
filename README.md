@@ -14,7 +14,7 @@ API 출처: https://http.cat
     ```bash
     cd httpcat
     ```
-3. `advanced` 브랜칠 전환합니다.
+3. `advanced` 브랜치로 전환합니다.
     ```bash
     git checkout advanced
     ```
